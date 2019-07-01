@@ -1,0 +1,120 @@
+
+<head>
+    <title>Learn More about Jacqueline </title>
+        <style>
+            
+        @font-face {
+                        font-family: 'mexcellentregular';
+                        src: url('mexcellent_rg-webfont.woff2') format('woff2'),
+                                url('mexcellent_rg-webfont.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+        }
+            
+        body {
+                background-image: url("sweet.jpg");
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-attachment: fixed;
+                margin: 0;
+                overflow: hidden;
+        }
+  
+        
+        #myself{
+             color: white;
+             font-size: 15px;
+             padding: 20px;
+             margin: 0;
+             border: 0;
+             text-align: justify;
+            
+            
+         }
+        
+/* The side navigation menu */
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+/* Active/current link */
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #999999;
+  color: white;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+     
+        </style>
+
+    
+</head>
+
+<body>
+    
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="index.html" class="Sidebarmenu button">Home</a>
+  <a class="active" href="aboutme.html">About Me</a>
+  <a href="#" class="Sidebarmenu button">My Hobbies</a>
+  <a href="#" class="Sidebarmenu button">Programmer Dream</a>
+  <a href="contact.html" class="menu item button">Contact information</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+<p id="myself">What's your favourite flavor? Sweet or savory? I always seem to go for Hershey's Kisses, Royce's fruit bar chocolate and Starbucks Venti mocha frappuccinos when I want a treat. 
+
+<br>I've always wondered if there’s any sort of connection between the foods we prefer and the kinds of people we are. 
+
+
+<br>My best friend, for example, is a little salty around the edges. She's a bit of a cynic, but she has a gentle interior. She also has a permanent can of Pringles on her desk.
+
+<br>I, on the other hand, tend to see the world on a bright side. I also happen to live exclusively for chocolate: white, milk, dark. You name it, I eat it.
+
+<br>Could it be a coincidence, then, that I, the so-called "sweeter" of the two of us, reach for the sweet stuff, while my more realistic BFF reaches for the chips and fries?
+    </p>
+    
+</div>
+   
+</body>
+

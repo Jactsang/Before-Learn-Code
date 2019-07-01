@@ -9,7 +9,7 @@
                 background-attachment: scroll;
         }
   
-        h1 {
+        #greeting {
              color: white;
              font-size: 40px;
              text-align: center;
@@ -23,8 +23,28 @@
             border: 15px solid green;
             padding: 50px;
             margin: 20px;
+         }
+        
+        .dropdown {
+                    position: relative;
+                    display: inline-block;
         }
 
+        .dropdown-content {
+                             display: none;
+                             position: absolute;
+                             background-color: #f9f9f9;
+                             min-width: 160px;
+                             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                             padding: 12px 16px;
+                             z-index: 1;
+         }
+
+         .dropdown:hover .dropdown-content {
+                                               display: block;
+         }
+            
+            
         </style>
     <script src="myScript.js"></script>
     
@@ -32,7 +52,12 @@
 
 <body>
 
-<h1>Hello Everyone</h1>
+<p id="greeting">Hello Everyone</p>
 
-<div>I am Jacqueline</div>
+<div>I am <div class="dropdown"><span>Jacqueline</span> 
+            <div class="dropdown-content">
+             <p>Hello World!</p>
+            </div>
+    
+    </div>
 </body>

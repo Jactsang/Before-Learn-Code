@@ -1,0 +1,113 @@
+<head>
+    <title>Learn More about Jacqueline </title>
+        <style>
+            
+        @font-face {
+                        font-family: 'mexcellentregular';
+                        src: url('mexcellent_rg-webfont.woff2') format('woff2'),
+                                url('mexcellent_rg-webfont.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+        }
+            
+        body {
+                background-image: url("lightbulb.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                margin: 0;
+                overflow: hidden;
+        }
+  
+ 
+        
+        #reason{
+            padding: 30% 15%;
+            text-align: justify;
+            font-size: 15px;
+            color: black;
+            
+            
+         }
+        
+/* The side navigation menu */
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+/* Active/current link */
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #999999;
+  color: white;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+     
+        </style>
+
+    
+</head>
+
+<body>
+    
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="index.html" class="Sidebarmenu button">Home</a>
+  <a href="Aboutme.html" class="Sidebarmenu button">About Me</a>
+  <a href="Myhobbies.html" class="Sidebarmenu button">My Hobbies</a>
+  <a class="active" href="newgoal.html">Programmer Dream</a>
+  <a href="contact.html" class="menu item button">Contact information</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+    <p id="reason">I was a marketing person. In my previous company, I got the chance to manage the company website.
+    <br>At the time, we used Wordpress for content management which was expected to be very user friendly to any non-IT guy.
+    <br>However, the system seemed to have many problems behind and using codes was the only way to manage the content structure properly
+    <br>It forced me to learn some basic website languages in order to maintain daily work routine.
+    <br>Honestly, it did open a new door for me to get to know more about programming, even it was just a glance to this new word
+    <br>It started to grow on me, and I want to know more about it in a more professional way.
+    </p>
+    
+</div>
+   
+</body>

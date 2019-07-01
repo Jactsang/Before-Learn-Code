@@ -42,6 +42,62 @@
             
          }
         
+/* The side navigation menu */
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #999999;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
      
         </style>
 
@@ -50,20 +106,25 @@
 
 <body>
     
-<!-- Sidebar -->
-<div class="sidebar menu" style="width:25%">
-  <h3 class="menu item">Menu</h3>
-  <a href="#" class="menu item button">About Me</a>
-  <a href="#" class="menu item button">My Hobbies</a>
-  <a href="#" class="menu item button">Programmer Dream</a>
+<!-- The sidebar -->
+<div class="sidebar">
+  <a class="active" href="index.html">Home</a>
+  <a href="#" class="Sidebarmenu button">About Me</a>
+  <a href="#" class="Sidebarmenu button">My Hobbies</a>
+  <a href="#" class="Sidebarmenu button">Programmer Dream</a>
   <a href="contact.html" class="menu item button">Contact information</a>
 </div>
 
-<p id="greeting">Hello Everyone</p>
+<!-- Page content -->
+<div class="content">
 
-<div id="introduction">Welcome to My Sweet Home! 
-    I am <b>Jacqueline</b> and I'm here to tell you something about me.</div>
-    
+    <p id="greeting">Hello Everyone</p>
 
+    <p id="introduction">Welcome to My Sweet Home! 
+    <br>I am <b>Jacqueline</b> and I'm here to tell you something about me.</p>
     
+</div>
+   
 </body>
+
+

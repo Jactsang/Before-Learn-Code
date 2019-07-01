@@ -1,0 +1,126 @@
+<head>
+    <title>Do I Like...?</title>
+        <style>
+            
+        @font-face {
+                        font-family: 'mexcellentregular';
+                        src: url('mexcellent_rg-webfont.woff2') format('woff2'),
+                                url('mexcellent_rg-webfont.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+        }
+            
+        body {
+                background-image: url("strangerthings.jpg");
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-attachment: fixed;
+                margin: 0;
+                overflow: hidden;
+        }
+  
+        #greeting {
+             color: white;
+             font-size: 100px;
+             padding: 20px;
+             margin: 0;
+             border: 0;
+             text-align: center;
+             text-transform: uppercase;
+             font-family: 'mexcellentregular'
+         }
+ 
+        
+        #introduction{
+            background-color: white;
+            opacity: 0.4;
+            position: fixed
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            
+            
+         }
+        
+/* The side navigation menu */
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+/* Active/current link */
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #999999;
+  color: white;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+     
+        </style>
+
+    
+</head>
+
+<body>
+    
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="index.html" class="Sidebarmenu button">Home</a>
+  <a href="Aboutme.html" class="Sidebarmenu button">About Me</a>
+  <a class="active" href="Myhobbies.html">My Hobbies</a>
+  <a href="#" class="Sidebarmenu button">Programmer Dream</a>
+  <a href="contact.html" class="menu item button">Contact information</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+    <p id="introduction">Probably you've noticed the unusual background image that I picked for this page. 
+    <br>Yes, It's Stranger Things! It's coming back soon on July 4.
+    <br>Now you possibly know what I'm trying to say here. Yes again, I a maniac for drama.
+    <br>It was so interesting to watch other people living another life.
+    <br>Since I was a little girl, watching movie has been one of my favourite activities with my family.
+    <br>If you have any good movie in mind, welcome to tell me, I always look for good movie.
+    
+</div>
+   
+</body>
